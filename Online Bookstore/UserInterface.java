@@ -27,8 +27,9 @@ public class UserInterface {
     }
 
     public void administrator() {
-        System.out.println("Type the name and password");
+        System.out.println("Type the name");
         String name = this.scan.nextLine();
+        System.out.println("Type the password");
         int password = Integer.valueOf(this.scan.nextLine());
         if (name.equalsIgnoreCase("Admin") && password == 1234) {
             while (true) {
